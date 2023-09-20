@@ -5,7 +5,7 @@
 {{#each (flatPropertiesSliceForTable flatSpec slice)}}
 | `{{truncatePath property @../key}}`
 {{#if (isComplex this)}}
-| xref:{{linkToObject this}}[`{{type}}`]
+| xref:{{linkToObject this}}[`{{linkTitle this}}`]
 {{else}}
 | `{{type}}`
 {{/if}}
